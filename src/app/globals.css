@@ -1,3 +1,5 @@
+@tailwind base;
+@tailwind components;
 @tailwind utilities;
 
 :root {
@@ -24,12 +26,6 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
-
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;
@@ -48,5 +44,12 @@ html {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* Add any custom utility classes */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
   }
 }
