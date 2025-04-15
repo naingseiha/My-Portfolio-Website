@@ -68,7 +68,7 @@ export const projects: Project[] = [
       "SwiftUI",
       "Kotlin",
       "Firebase",
-      "GraphQL",
+      "Neo4j",
     ],
     demoLink: "https://fitnessapp-demo.example.com",
     githubLink: "https://github.com/yourusername/fitness-mobile-app",

@@ -18,6 +18,7 @@ import { useParams, useRouter } from "next/navigation";
 // Tech stack icons mapping (same as in projects page)
 const techIcons = {
   MongoDB: "/icons/mongodb.svg",
+  Neo4j: "/icons/neo4j.svg",
   "Express.js": "/icons/express.svg",
   React: "/icons/react.svg",
   "Node.js": "/icons/nodejs.svg",

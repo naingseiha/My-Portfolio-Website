@@ -594,17 +594,16 @@ export default function Home() {
               <div className="relative overflow-hidden h-64 md:h-80">
                 <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-indigo-600 opacity-90 group-hover:opacity-100 transition-opacity">
                   <div className="absolute inset-0 flex items-center justify-center text-xl md:text-2xl font-bold text-white">
-                    Mobile Fitness App
+                    Social Media for Elearning
                   </div>
                 </div>
-                {/* Uncomment when you have an image
-                <Image 
-                  src="/images/projects/project2.jpg" 
-                  alt="Mobile Fitness App" 
+
+                <Image
+                  src="/images/projects/mobile-project.png"
+                  alt="Mobile Fitness App"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
-                */}
               </div>
               <div className="p-8">
                 <div className="flex justify-between items-center mb-4">
@@ -654,9 +653,10 @@ export default function Home() {
                   </div>
                 </div>
                 <p className="text-slate-700 dark:text-slate-300 mb-6">
-                  A cross-platform fitness tracking application built with React
-                  Native and Expo, featuring workout tracking, personalized
-                  plans, progress charts, and social sharing capabilities.
+                  A social media-powered e-learning app designed to connect
+                  learners through interactive courses, and personalized
+                  learning goals. Built with React Native and powered by Node.js
+                  and Neo4j.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-6">
                   <span className="px-3 py-1 bg-purple-100 text-purple-800 dark:bg-purple-900/40 dark:text-purple-200 rounded-full text-sm">

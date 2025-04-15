@@ -20,7 +20,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 w-full bg-white/90 backdrop-blur-sm dark:bg-slate-900/90 shadow-sm">
       <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
         <Link href="/" className="text-xl font-bold">
-          <span className="text-blue-600 dark:text-blue-400">Portfolio</span>
+          <span className="text-blue-600 dark:text-blue-400">Born to Code</span>
         </Link>
 
         {/* Desktop Nav */}
