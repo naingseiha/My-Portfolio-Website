@@ -184,14 +184,13 @@ export default function Home() {
                     <div className="absolute inset-0 flex items-center justify-center text-4xl font-bold text-blue-500/50 dark:text-blue-400/50">
                       Your Photo
                     </div>
-                    {/* Uncomment when you have an image
-                    <Image 
-                      src="/images/profile.jpg" 
-                      alt="Naing Seiha - Developer" 
+
+                    <Image
+                      src="/images/profile.jpg"
+                      alt="Naing Seiha"
                       fill
                       className="object-cover"
                     />
-                    */}
                   </div>
                 </div>
 
@@ -211,7 +210,7 @@ export default function Home() {
                     <span className="h-3 w-3 rounded-full bg-indigo-600 dark:bg-indigo-400"></span>
                   </span>
                   <span className="text-sm font-medium text-slate-800 dark:text-slate-200">
-                    5+ Years Exp.
+                    Full-Stack Developer
                   </span>
                 </div>
               </div>
@@ -232,7 +231,7 @@ export default function Home() {
           >
             <div className="text-center">
               <div className="text-3xl md:text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">
-                50+
+                5+
               </div>
               <p className="text-slate-700 dark:text-slate-300">
                 Projects Completed
@@ -240,15 +239,15 @@ export default function Home() {
             </div>
             <div className="text-center">
               <div className="text-3xl md:text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">
-                30+
+                10+
               </div>
               <p className="text-slate-700 dark:text-slate-300">
-                Happy Clients
+                In-Development Projects
               </p>
             </div>
             <div className="text-center">
               <div className="text-3xl md:text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">
-                5+
+                1+
               </div>
               <p className="text-slate-700 dark:text-slate-300">
                 Years Experience
@@ -256,7 +255,7 @@ export default function Home() {
             </div>
             <div className="text-center">
               <div className="text-3xl md:text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">
-                10+
+                8+
               </div>
               <p className="text-slate-700 dark:text-slate-300">Technologies</p>
             </div>
