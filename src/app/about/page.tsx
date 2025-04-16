@@ -52,55 +52,69 @@ export default function AboutPage() {
   // Professional milestones/timeline
   const milestones = [
     {
-      year: "2022-Present",
-      title: "Senior Full-Stack Developer",
-      company: "Tech Innovation Inc.",
-      location: "Prague, Czech Republic",
+      year: "2021-Present",
+      title: "Freelance Developer",
+      company: "Self-Employed",
+      location: "Phnom Penh, Cambodia / Prague, Czech Republic",
       description:
-        "Leading development of enterprise web applications using Next.js, React, and Node.js. Mentoring junior developers and implementing CI/CD pipelines. Successfully delivered projects for major clients with 30% improved performance metrics.",
+        "Even after becoming a teacher, I never lost my passion for programming. I’ve always loved the creative and problem-solving side of software development. While teaching, I realized that staying in the world of development pushes me to keep learning and improving, especially with how fast technology evolves. As a result, I continued to take on freelance work, participating in few company projects and developing applications for both study and personal use. These projects include an e-commerce app, an e-learning app, a fruit shop app, and more. In 2023, I decided to take a big step. I applied for a scholarship from the Czech Republic government, driven by my desire to study abroad and grow in a more competitive environment. I saw it as a chance to sharpen my skills and open up new job opportunities—especially in web and mobile development. Fortunately, I was accepted, and this new chapter has allowed me to focus even more on growing as a developer.",
       achievements: [
-        "Led a team of 5 developers to deliver 3 major product features ahead of schedule",
-        "Implemented CI/CD pipelines reducing deployment time by 40%",
-        "Optimized database queries resulting in 50% faster page loads",
+        "While studying, I’ve kept learning on my own by building different kinds of apps—like a MERN-stack e-commerce site, a restaurant app, and a simple to-do list app.",
+        "I also built a travel app using React Native with Expo and Supabase.",
+        "One of my favorite projects so far is the social media app I created for e-learning. It’s part of my master’s thesis. I designed and developed the backend using Node.js, connected it to a Neo4j graph database, and built an API that powers a React Native mobile app.",
       ],
     },
     {
-      year: "2020-2022",
-      title: "Full-Stack Developer",
-      company: "Digital Solutions Ltd.",
+      year: "2019-2023",
+      title: "Information Technology Teacher",
+      company: "State and Private Institutions",
+      location: "Siem Reap, Cambodia",
+      description:
+        "After completing my teacher training course at the National Institute of Education, I returned to Siem Reap to begin my teaching career. I taught at several high schools and national institutes, delivering ICT education across different levels.",
+      achievements: [
+        "Served as a teacher trainer during the COVID-19 pandemic, helping high school teachers improve their ICT skills and enhance the effectiveness of remote teaching.",
+        "Taught ICT to high school students, focusing on computer literacy and foundational IT skills.",
+        "Delivered university-level courses at the National Institute, including PHP, JavaScript, and Database Systems.",
+      ],
+    },
+    {
+      year: "2018-2019",
+      title: "Freelance Flutter Developer",
+      company: "Mango Byte",
       location: "Phnom Penh, Cambodia",
       description:
-        "Built robust mobile applications with React Native and developed backend services with Express.js and MongoDB. Collaborated with design and product teams to create seamless user experiences across platforms.",
+        "In 2018, I passed the entrance exam for a one-year higher education teacher training course in Informatics. During the same period, I also worked as a freelance Flutter and iOS developer for a Japanese company, Mango-Byte, while continuing my studies.",
       achievements: [
-        "Developed 4 mobile applications with combined 50,000+ downloads",
-        "Architected scalable backend services handling 1M+ API requests daily",
-        "Reduced app load time by 35% through performance optimizations",
+        "Developed mobile applications using Flutter and the Bloc state management pattern.",
+        "Built iOS applications following the MVVM architecture and using RxSwift for reactive programming.",
+        "Maintained and enhanced the company’s media website to support ongoing content and feature updates.",
       ],
     },
     {
-      year: "2018-2020",
-      title: "Front-End Developer",
-      company: "WebCraft Studios",
+      year: "2017-2018",
+      title: "Web Developer",
+      company: "ALLWEB Co., Ltd.",
       location: "Phnom Penh, Cambodia",
       description:
-        "Created responsive web interfaces with React.js and collaborated with UI/UX designers to implement pixel-perfect designs. Specialized in building accessible, high-performance user interfaces.",
+        "Created responsive web interfaces with pure HTML, CSS, and JavaScript and collaborated with UI/UX designers to implement pixel-perfect designs. Specialized in building accessible, high-performance user interfaces.",
       achievements: [
-        "Rebuilt company's flagship product UI increasing user engagement by 25%",
-        "Implemented accessibility standards achieving WCAG AA compliance",
-        "Created reusable component library reducing development time by 30%",
+        "Implemented accessibility standards achieving WCAG AA compliance.",
+        "Created reusable component library reducing development time by 30%.",
+        "Developed a custom CMS for small businesses, increasing client satisfaction.",
       ],
     },
     {
-      year: "2016-2018",
+      year: "2016-2017",
       title: "Junior Developer",
       company: "TechStart Company",
       location: "Phnom Penh, Cambodia",
       description:
-        "Developed and maintained websites using JavaScript, HTML, and CSS while learning modern front-end frameworks. Assisted senior developers with code reviews and bug fixes.",
+        "I was employed at VisionFund Cambodia Microfinance Institution, where I collaborated with the IT team in the IT Department.",
       achievements: [
-        "Built and deployed 12+ client websites with responsive designs",
-        "Contributed to internal tools that improved team productivity",
-        'Received "Rising Talent Award" for exceptional growth and contributions',
+        "Studying the process of efficiently using IT technology for microfinance institutions with the development team",
+        "Contributing to the development of a system for managing employee data in the institution",
+        "Using SQL Server to query data as needed to create reports",
+        "Working with the IT development team on website maintenance",
       ],
     },
   ];
@@ -113,13 +127,15 @@ export default function AboutPage() {
       location: "Prague, Czech Republic",
       period: "2023-2025",
       description:
-        'Focusing on advanced data analysis, machine learning applications, and information systems design. Thesis on "Optimizing Neural Networks for Real-time Data Processing in Web Applications."',
+        "A comprehensive program combining theory and practice in software development, database systems, and information technologies. Focused on building advanced skills in systems design, integration, and ICT project management to address real-world challenges in a digital environment.",
       courses: [
-        "Advanced Algorithms",
-        "Machine Learning",
-        "Information System Design",
-        "Data Mining",
-        "Network Security",
+        "Systems Integration",
+        "Theorytical of Informatics",
+        "Project Management",
+        "Projecting of Information Systems",
+        "Formal Techniques of Data Modeling",
+        "Internet of Things",
+        "Internet Technologies Server Side",
       ],
     },
     {
@@ -143,12 +159,14 @@ export default function AboutPage() {
       location: "Phnom Penh, Cambodia",
       period: "2013-2017",
       description:
-        "Foundation in computer science principles, software engineering, and systems design. Graduated with honors and received recognition for innovative final project.",
+        "Studied Computer Science and Engineering at university, gaining a strong foundation in core computer science principles, software engineering, and system design.",
       courses: [
         "Data Structures & Algorithms",
         "Object-Oriented Programming",
+        "Object-Oriented Analysis & Design",
         "Database Systems",
         "Software Engineering",
+        "RESTful API Design",
         "Web Development",
       ],
     },
@@ -156,22 +174,29 @@ export default function AboutPage() {
 
   // Skills with proficiency levels
   const skills = [
-    { name: "JavaScript", level: 95, category: "languages" },
-    { name: "TypeScript", level: 85, category: "languages" },
-    { name: "Python", level: 75, category: "languages" },
-    { name: "React.js", level: 90, category: "frontend" },
-    { name: "Next.js", level: 85, category: "frontend" },
-    { name: "Vue.js", level: 70, category: "frontend" },
-    { name: "Node.js", level: 80, category: "backend" },
-    { name: "Express.js", level: 85, category: "backend" },
-    { name: "MongoDB", level: 75, category: "database" },
-    { name: "PostgreSQL", level: 70, category: "database" },
-    { name: "React Native", level: 80, category: "mobile" },
-    { name: "HTML/CSS", level: 95, category: "frontend" },
-    { name: "Tailwind CSS", level: 90, category: "frontend" },
+    { name: "JavaScript", level: 60, category: "languages" },
+    { name: "TypeScript", level: 50, category: "languages" },
+    { name: "Python", level: 40, category: "languages" },
+    { name: "Java", level: 50, category: "languages" },
+    { name: "Swift", level: 40, category: "languages" },
+    { name: "Kotlin", level: 40, category: "languages" },
+    { name: "Node.js", level: 40, category: "backend" },
+    { name: "Express.js", level: 40, category: "backend" },
+    { name: "MongoDB", level: 60, category: "database" },
+    { name: "PostgreSQL", level: 60, category: "database" },
+    { name: "Neo4j", level: 50, category: "database" },
+    { name: "GraphQL", level: 50, category: "backend" },
+    { name: "Firebase", level: 50, category: "backend" },
+    { name: "RESTful APIs", level: 40, category: "backend" },
+    { name: "React Native", level: 60, category: "frontend" },
+    { name: "Flutter", level: 50, category: "frontend" },
+    { name: "React.js", level: 70, category: "frontend" },
+    { name: "Next.js", level: 40, category: "frontend" },
+    { name: "HTML/CSS", level: 75, category: "frontend" },
+    { name: "Tailwind CSS", level: 50, category: "frontend" },
     { name: "Git/GitHub", level: 90, category: "tools" },
-    { name: "Docker", level: 70, category: "tools" },
-    { name: "AWS", level: 65, category: "tools" },
+    { name: "Docker", level: 50, category: "tools" },
+    { name: "AWS", level: 30, category: "tools" },
   ];
 
   // Filter skills by category
@@ -215,10 +240,14 @@ export default function AboutPage() {
               </h1>
 
               <p className="text-xl text-slate-700 dark:text-slate-300 mb-8 leading-relaxed">
-                A passionate Full-Stack Developer with international experience
-                building high-performance web and mobile applications. I combine
-                technical expertise with creative problem-solving to create
-                exceptional digital experiences.
+                I'm a developer and former ICT teacher with a deep love for
+                coding, learning, and building meaningful digital experiences.
+                My journey has taken me from classrooms in Cambodia to freelance
+                projects and international studies, where I've explored
+                everything from mobile and web development to real-time apps.
+                I’m always curious, always creating—and passionate about using
+                technology to make life a little easier and a lot more
+                connected.
               </p>
 
               <div className="flex flex-wrap gap-4">
@@ -388,16 +417,18 @@ export default function AboutPage() {
                   Professional Vision
                 </h3>
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                  With a rich multicultural background and education spanning
-                  three countries, I bring a unique global perspective to every
-                  project. My passion lies in creating technology that bridges
-                  cultural gaps and solves real-world problems across diverse
-                  markets.
+                  I’ve always been passionate about building things that make a
+                  real difference. With experience that stretches from teaching
+                  students in Cambodia to developing apps for global users, I’ve
+                  come to see technology as a powerful tool for connection,
+                  learning, and solving everyday problems.
                 </p>
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed mt-4">
-                  I'm committed to building applications that are not only
-                  technically sound but also culturally relevant and accessible
-                  to users worldwide.
+                  What drives me is the idea of creating applications that
+                  aren’t just functional, but truly helpful and accessible to
+                  people from all walks of life. Whether it’s an e-learning
+                  platform or a simple tool to manage daily tasks, I want my
+                  work to be useful, meaningful, and easy to use.
                 </p>
               </div>
 
@@ -419,15 +450,17 @@ export default function AboutPage() {
                   Technical Approach
                 </h3>
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                  My technical philosophy centers on creating maintainable,
-                  scalable solutions that stand the test of time. I believe in
-                  choosing the right technology for each specific problem rather
-                  than following trends blindly.
+                  When I build something, I focus on using the right tools for
+                  the job—not just what’s trending. I care about making things
+                  that work well, last, and are easy to maintain. I enjoy
+                  exploring different stacks and finding the best mix of
+                  technologies to get things done efficiently.
                 </p>
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed mt-4">
-                  By balancing cutting-edge technologies with proven
-                  methodologies, I deliver solutions that are both innovative
-                  and reliable, giving clients the best of both worlds.
+                  From mobile apps with Flutter and React Native to backend
+                  systems with Node.js and Neo4j, I like working across the full
+                  stack. I aim to write clean, reusable code and design systems
+                  that are both smart and stable.
                 </p>
               </div>
 
@@ -449,16 +482,18 @@ export default function AboutPage() {
                   Work Philosophy
                 </h3>
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                  I approach every project with a blend of creativity and
-                  methodical planning. My work style emphasizes clear
-                  communication, attention to detail, and delivering beyond
-                  expectations. I believe in building relationships, not just
-                  code.
+                  I see every project as a chance to grow, create, and make
+                  something valuable. I try to bring a mix of creativity and
+                  structure to my work—thinking things through carefully, but
+                  also staying flexible and open to new ideas.
                 </p>
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed mt-4">
-                  Whether working with startups or established enterprises, I
-                  bring the same level of dedication and commitment to
-                  excellence.
+                  Clear communication, reliability, and attention to detail are
+                  really important to me. I’ve learned these values through both
+                  teaching and coding, and they’ve helped me not only build
+                  better software but also better relationships with the people
+                  I work with. Whether I’m collaborating with a team or working
+                  solo, I always give it my full commitment.
                 </p>
               </div>
 
@@ -480,15 +515,17 @@ export default function AboutPage() {
                   Continuous Learning
                 </h3>
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                  Technology never stands still, and neither do I. My
-                  educational journey spans multiple countries and disciplines,
-                  reflecting my commitment to lifelong learning and personal
-                  growth.
+                  I love learning. It’s one of the main reasons I became a
+                  teacher, and it’s also what keeps me excited about being a
+                  developer. Technology moves fast, and I do my best to keep
+                  up—whether it’s through personal projects, tutorials, or just
+                  trying out new tools.
                 </p>
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed mt-4">
-                  I dedicate time each week to learning new technologies,
-                  methodologies, and best practices, ensuring my skills remain
-                  cutting-edge in this rapidly evolving industry.
+                  Studying abroad has pushed me even further, giving me the
+                  space to challenge myself and explore new ways of thinking. I
+                  regularly set aside time to build new things, experiment, and
+                  grow as both a developer and a person.
                 </p>
               </div>
             </div>

@@ -92,22 +92,21 @@ export default function ContactPage() {
     {
       icon: <FiMail className="h-6 w-6" />,
       title: "Email",
-      value: "contact@yourname.com",
-      href: "mailto:contact@yourname.com",
+      value: "naing.seiha@gmail.com",
+      href: "mailto:naing.seiha@gmail.com",
       delay: 0.2,
     },
     {
       icon: <FiPhone className="h-6 w-6" />,
       title: "Phone",
-      value: "+1 (234) 567-890",
-      href: "tel:+1234567890",
+      value: "+420 (778) 026-061",
+      href: "tel:+420778026061",
       delay: 0.3,
     },
     {
       icon: <FiMapPin className="h-6 w-6" />,
       title: "Location",
-      value: "Your City, Country",
-      href: null,
+      value: "Kamycka 1281, Praha Suchdol, Czech Republic",
       delay: 0.4,
     },
   ];
@@ -550,45 +549,6 @@ export default function ContactPage() {
             </div>
           </motion.div>
         </div>
-      </section>
-
-      {/* Map or Schedule Section - Optional enhancement */}
-      <section className="container mx-auto px-4 pb-24">
-        <motion.div
-          className="max-w-4xl mx-auto bg-white dark:bg-slate-800 rounded-2xl shadow-xl p-8 border border-slate-100 dark:border-slate-700 text-center"
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 40 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-        >
-          <h2 className="text-2xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-indigo-400">
-            Schedule a Meeting
-          </h2>
-          <p className="text-slate-700 dark:text-slate-300 mb-8 max-w-2xl mx-auto">
-            Prefer to talk in real-time? Schedule a virtual meeting at your
-            convenience and let's discuss your project or opportunity in detail.
-          </p>
-          <a
-            href="https://calendly.com/yourusername"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center px-8 py-3 bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
-          >
-            <svg
-              className="h-5 w-5 mr-2"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-              />
-            </svg>
-            Schedule a Call
-          </a>
-        </motion.div>
       </section>
     </div>
   );
