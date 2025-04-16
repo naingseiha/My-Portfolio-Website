@@ -8,7 +8,7 @@ export default function Home() {
   // For animated text
   const [displayText, setDisplayText] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
-  const textToAnimate = "Full-Stack Developer";
+  const textToAnimate = "Freelance Developer";
 
   // For scroll animations
   const [isVisible, setIsVisible] = useState({
@@ -89,8 +89,11 @@ export default function Home() {
               </h1>
 
               <p className="text-xl md:text-2xl text-slate-700 dark:text-slate-300 mb-8 leading-relaxed max-w-xl">
-                Creating exceptional digital experiences through clean code and
-                innovative solutions for web and mobile platforms.
+                I'm a developer and former ICT teacher with a strong passion for
+                building impactful digital solutions. My experience spans from
+                classrooms in Cambodia to freelance and international projects,
+                focusing on web, mobile, and real-time applications using modern
+                technologies.
               </p>
 
               <div className="flex flex-wrap gap-5">

@@ -23,7 +23,7 @@ const skillsData = {
       icon: <SiMongodb className="text-4xl text-green-500" />,
       description:
         "Database design, aggregation pipelines, performance optimization, Atlas cloud deployment.",
-      level: 90,
+      level: 60,
       color: "from-green-400 to-green-600",
     },
     {
@@ -31,7 +31,7 @@ const skillsData = {
       icon: <SiExpress className="text-4xl text-gray-500" />,
       description:
         "RESTful API design, middleware implementation, authentication, route handling.",
-      level: 85,
+      level: 40,
       color: "from-gray-400 to-gray-600",
     },
     {
@@ -39,7 +39,7 @@ const skillsData = {
       icon: <FaReact className="text-4xl text-blue-500" />,
       description:
         "Component architecture, hooks, context API, custom hooks, state management (Redux, Zustand).",
-      level: 95,
+      level: 60,
       color: "from-blue-400 to-blue-600",
     },
     {
@@ -47,7 +47,7 @@ const skillsData = {
       icon: <FaNodeJs className="text-4xl text-green-600" />,
       description:
         "Server-side JavaScript, asynchronous programming, microservices, real-time applications.",
-      level: 90,
+      level: 40,
       color: "from-green-500 to-green-700",
     },
   ],
@@ -57,7 +57,7 @@ const skillsData = {
       icon: <SiNextdotjs className="text-4xl text-black dark:text-white" />,
       description:
         "Server components, client components, layouts, loading states, error boundaries, streaming.",
-      level: 90,
+      level: 40,
       color: "from-black to-gray-800 dark:from-white dark:to-gray-300",
     },
     {
@@ -65,7 +65,7 @@ const skillsData = {
       icon: <FaServer className="text-4xl text-purple-500" />,
       description:
         "API development, serverless functions, middleware, edge functions, authentication.",
-      level: 85,
+      level: 40,
       color: "from-purple-400 to-purple-600",
     },
   ],
@@ -75,7 +75,7 @@ const skillsData = {
       icon: <TbBrandReactNative className="text-4xl text-blue-400" />,
       description:
         "Cross-platform mobile app development, Expo SDK integration, native modules, performance optimization.",
-      level: 90,
+      level: 60,
       color: "from-blue-300 to-blue-500",
     },
     {
@@ -85,7 +85,7 @@ const skillsData = {
       ),
       description:
         "Modern declarative UI framework for iOS, Swift programming, iOS app lifecycle and architecture.",
-      level: 75,
+      level: 40,
       color: "from-gray-700 to-gray-900 dark:from-gray-200 dark:to-gray-400",
     },
     {
@@ -93,7 +93,7 @@ const skillsData = {
       icon: <IoLogoAndroid className="text-4xl text-green-500" />,
       description:
         "Android app development using Kotlin, Jetpack libraries, material design principles.",
-      level: 70,
+      level: 30,
       color: "from-green-400 to-green-600",
     },
   ],
@@ -103,7 +103,7 @@ const skillsData = {
       icon: <SiTypescript className="text-4xl text-blue-600" />,
       description:
         "Static typing, interfaces, generics, advanced types, type inference.",
-      level: 90,
+      level: 50,
       color: "from-blue-500 to-blue-700",
     },
     {
@@ -111,7 +111,7 @@ const skillsData = {
       icon: <SiTailwindcss className="text-4xl text-teal-500" />,
       description:
         "Utility-first CSS framework, responsive design, custom configurations.",
-      level: 95,
+      level: 50,
       color: "from-teal-400 to-teal-600",
     },
     {
@@ -119,7 +119,7 @@ const skillsData = {
       icon: <SiGraphql className="text-4xl text-pink-600" />,
       description:
         "Schema design, resolvers, Apollo Client/Server, subscriptions.",
-      level: 80,
+      level: 30,
       color: "from-pink-500 to-pink-700",
     },
     {
@@ -127,7 +127,7 @@ const skillsData = {
       icon: <SiGithubactions className="text-4xl text-indigo-600" />,
       description:
         "GitHub Actions, Vercel deployment, automated testing, continuous integration.",
-      level: 85,
+      level: 50,
       color: "from-indigo-500 to-indigo-700",
     },
   ],
