@@ -134,7 +134,7 @@ export default function ContactPage() {
               animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 20 }}
               transition={{ duration: 0.8 }}
             >
-              Let's Connect
+              Let&apos;s Connect
             </motion.h1>
 
             <motion.p
@@ -143,7 +143,7 @@ export default function ContactPage() {
               animate={{ opacity: isInView ? 1 : 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              I'm always interested in hearing about new projects and
+              I&apos;m always interested in hearing about new projects and
               opportunities. Feel free to reach out if you have any questions or
               just want to say hello!
             </motion.p>
@@ -192,11 +192,12 @@ export default function ContactPage() {
                       }}
                       transition={{ duration: 0.8, delay: 0.15 }}
                     >
-                      I'd love to hear from you! Here's how you can reach me.
+                      I&apos;d love to hear from you! Here&apos;s how you can
+                      reach me.
                     </motion.p>
 
                     <div className="space-y-8">
-                      {contactMethods.map((method, index) => (
+                      {contactMethods.map((method) => (
                         <motion.div
                           key={method.title}
                           className="flex items-start"
@@ -284,8 +285,8 @@ export default function ContactPage() {
                           Message Sent!
                         </h3>
                         <p className="mb-6 text-slate-600 dark:text-slate-300">
-                          Thank you for reaching out. I'll get back to you as
-                          soon as possible.
+                          Thank you for reaching out. I&apos;ll get back to you
+                          as soon as possible.
                         </p>
                         <button
                           onClick={() => setSubmitted(false)}

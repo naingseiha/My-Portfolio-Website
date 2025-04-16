@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, JSX } from "react";
 import { motion } from "framer-motion";
 import { FaReact, FaNodeJs, FaServer } from "react-icons/fa";
 import {
@@ -163,12 +163,12 @@ const categories = [
 
 export default function SkillsPage() {
   const [activeCategory, setActiveCategory] = useState("mern");
-  const [isInView, setIsInView] = useState({});
-  const sectionRefs = useRef({});
+  const [isInView, setIsInView] = useState<Record<string, boolean>>({});
+  const sectionRefs = useRef<Record<string, HTMLElement | null>>({});
 
   // Setup intersection observer for animations
   useEffect(() => {
-    const observers = {};
+    const observers: Record<string, IntersectionObserver> = {};
 
     categories.forEach((category) => {
       const ref = sectionRefs.current[category.id];
@@ -198,14 +198,14 @@ export default function SkillsPage() {
   }, []);
 
   // Register refs for each section
-  const registerRef = (id, el) => {
+  const registerRef = (id: string, el: HTMLElement | null) => {
     if (el && !sectionRefs.current[id]) {
       sectionRefs.current[id] = el;
     }
   };
 
   // Scroll to section handler
-  const scrollToSection = (id) => {
+  const scrollToSection = (id: string) => {
     setActiveCategory(id);
     sectionRefs.current[id]?.scrollIntoView({
       behavior: "smooth",
@@ -286,14 +286,16 @@ export default function SkillsPage() {
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-8">
-                {skillsData[category.id].map((skill, index) => (
-                  <SkillCard
-                    key={skill.title}
-                    skill={skill}
-                    index={index}
-                    isVisible={isInView[category.id]}
-                  />
-                ))}
+                {skillsData[category.id as keyof typeof skillsData].map(
+                  (skill, index) => (
+                    <SkillCard
+                      key={skill.title}
+                      skill={skill}
+                      index={index}
+                      isVisible={isInView[category.id]}
+                    />
+                  )
+                )}
               </div>
             </motion.div>
           </section>
@@ -303,8 +305,25 @@ export default function SkillsPage() {
   );
 }
 
+// Define the skill type
+interface Skill {
+  title: string;
+  icon: JSX.Element;
+  description: string;
+  level: number;
+  color: string;
+}
+
 // Enhanced Skill Card Component
-function SkillCard({ skill, index, isVisible }) {
+function SkillCard({
+  skill,
+  index,
+  isVisible,
+}: {
+  skill: Skill;
+  index: number;
+  isVisible: boolean;
+}) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}

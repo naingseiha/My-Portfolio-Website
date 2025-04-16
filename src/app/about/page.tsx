@@ -200,7 +200,7 @@ export default function AboutPage() {
   ];
 
   // Filter skills by category
-  const getSkillsByCategory = (category) => {
+  const getSkillsByCategory = (category: string) => {
     return skills.filter((skill) => skill.category === category);
   };
 
@@ -233,20 +233,20 @@ export default function AboutPage() {
               </div>
 
               <h1 className="text-5xl md:text-6xl font-bold mb-6">
-                <span className="block">Hello, I'm</span>
+                <span className="block">Hello, I&apos;m</span>
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-blue-600 dark:from-indigo-400 dark:to-blue-400">
                   Naing Seiha
                 </span>
               </h1>
 
               <p className="text-xl text-slate-700 dark:text-slate-300 mb-8 leading-relaxed">
-                I'm a developer and former ICT teacher with a deep love for
+                I&apos;m a developer and former ICT teacher with a deep love for
                 coding, learning, and building meaningful digital experiences.
                 My journey has taken me from classrooms in Cambodia to freelance
-                projects and international studies, where I've explored
+                projects and international studies, where I&apos;ve explored
                 everything from mobile and web development to real-time apps.
-                I’m always curious, always creating—and passionate about using
-                technology to make life a little easier and a lot more
+                I&apos;m always curious, always creating—and passionate about
+                using technology to make life a little easier and a lot more
                 connected.
               </p>
 
@@ -417,18 +417,18 @@ export default function AboutPage() {
                   Professional Vision
                 </h3>
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                  I’ve always been passionate about building things that make a
-                  real difference. With experience that stretches from teaching
-                  students in Cambodia to developing apps for global users, I’ve
-                  come to see technology as a powerful tool for connection,
-                  learning, and solving everyday problems.
+                  I&apos;ve always been passionate about building things that
+                  make a real difference. With experience that stretches from
+                  teaching students in Cambodia to developing apps for global
+                  users, I&apos;ve come to see technology as a powerful tool for
+                  connection, learning, and solving everyday problems.
                 </p>
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed mt-4">
                   What drives me is the idea of creating applications that
-                  aren’t just functional, but truly helpful and accessible to
-                  people from all walks of life. Whether it’s an e-learning
-                  platform or a simple tool to manage daily tasks, I want my
-                  work to be useful, meaningful, and easy to use.
+                  aren&lsquo;t just functional, but truly helpful and accessible
+                  to people from all walks of life. Whether it&lsquo;s an
+                  e-learning platform or a simple tool to manage daily tasks, I
+                  want my work to be useful, meaningful, and easy to use.
                 </p>
               </div>
 
@@ -451,8 +451,8 @@ export default function AboutPage() {
                 </h3>
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
                   When I build something, I focus on using the right tools for
-                  the job—not just what’s trending. I care about making things
-                  that work well, last, and are easy to maintain. I enjoy
+                  the job—not just what&lsquo;s trending. I care about making
+                  things that work well, last, and are easy to maintain. I enjoy
                   exploring different stacks and finding the best mix of
                   technologies to get things done efficiently.
                 </p>
@@ -489,11 +489,11 @@ export default function AboutPage() {
                 </p>
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed mt-4">
                   Clear communication, reliability, and attention to detail are
-                  really important to me. I’ve learned these values through both
-                  teaching and coding, and they’ve helped me not only build
-                  better software but also better relationships with the people
-                  I work with. Whether I’m collaborating with a team or working
-                  solo, I always give it my full commitment.
+                  really important to me. I&apos;ve learned these values through
+                  both teaching and coding, and they&apos;ve helped me not only
+                  build better software but also better relationships with the
+                  people I work with. Whether I&lsquo;m collaborating with a
+                  team or working solo, I always give it my full commitment.
                 </p>
               </div>
 
@@ -515,11 +515,11 @@ export default function AboutPage() {
                   Continuous Learning
                 </h3>
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                  I love learning. It’s one of the main reasons I became a
-                  teacher, and it’s also what keeps me excited about being a
-                  developer. Technology moves fast, and I do my best to keep
-                  up—whether it’s through personal projects, tutorials, or just
-                  trying out new tools.
+                  I love learning. It&apos;s one of the main reasons I became a
+                  teacher, and it&apos;s also what keeps me excited about being
+                  a developer. Technology moves fast, and I do my best to keep
+                  up—whether it&apos;s through personal projects, tutorials, or
+                  just trying out new tools.
                 </p>
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed mt-4">
                   Studying abroad has pushed me even further, giving me the
@@ -968,8 +968,8 @@ export default function AboutPage() {
             </h2>
             <p className="text-xl mb-8 text-indigo-100">
               Whether you need a complete web application, mobile app, or
-              technical consultation, I'm here to help turn your vision into
-              reality.
+              technical consultation, I&apos;m here to help turn your vision
+              into reality.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link

@@ -2,8 +2,8 @@
 
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
-import Image from "next/image";
-import { motion, AnimatePresence } from "framer-motion";
+// import Image from "next/image";
+import { motion } from "framer-motion";
 import {
   HiOutlineExternalLink,
   HiArrowLeft,
@@ -13,10 +13,10 @@ import { FaGithub, FaRegLightbulb } from "react-icons/fa";
 import { IoLayersOutline } from "react-icons/io5";
 import { BsCodeSlash, BsBoxArrowUpRight } from "react-icons/bs";
 import { projects } from "@/data/projects";
-import { useParams, useRouter } from "next/navigation";
+import { useParams } from "next/navigation";
 
 // Tech stack icons mapping (same as in projects page)
-const techIcons = {
+const techIcons: Record<string, string> = {
   MongoDB: "/icons/mongodb.svg",
   Neo4j: "/icons/neo4j.svg",
   "Express.js": "/icons/express.svg",
@@ -57,8 +57,20 @@ const mockGalleryImages = [
 
 export default function ProjectDetailPage() {
   const params = useParams();
-  const router = useRouter();
-  const [project, setProject] = useState<any>(null);
+  // const router = useRouter();
+  interface Project {
+    id: number;
+    title: string;
+    description: string;
+    longDescription: string;
+    category: "web" | "mobile" | "fullstack";
+    technologies: string[];
+    githubLink?: string;
+    demoLink?: string;
+    featured?: boolean;
+  }
+
+  const [project, setProject] = useState<Project | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [activeSection, setActiveSection] = useState("overview");
   const [activeGalleryImage, setActiveGalleryImage] = useState(0);
@@ -133,7 +145,9 @@ export default function ProjectDetailPage() {
   };
 
   // Scroll to section
-  const scrollToSection = (sectionRef: React.RefObject<HTMLDivElement>) => {
+  const scrollToSection = (
+    sectionRef: React.RefObject<HTMLDivElement | null>
+  ) => {
     sectionRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
@@ -166,8 +180,8 @@ export default function ProjectDetailPage() {
           Project Not Found
         </h1>
         <p className="text-slate-600 dark:text-slate-400 mb-6 text-center max-w-md">
-          We couldn't find the project you're looking for. It may have been
-          moved or doesn't exist.
+          We couldn&apos;t find the project you&apos;re looking for. It may have
+          been moved or doesn&apos;t exist.
         </p>
         <Link
           href="/projects"
@@ -828,8 +842,8 @@ export default function ProjectDetailPage() {
                       Interested in working together?
                     </h3>
                     <p className="text-indigo-100 dark:text-indigo-200 mb-8 max-w-xl mx-auto">
-                      I'm always open to discussing new projects, creative ideas
-                      or opportunities to be part of your vision.
+                      I&apos;m always open to discussing new projects, creative
+                      ideas or opportunities to be part of your vision.
                     </p>
                     <Link
                       href="/contact"

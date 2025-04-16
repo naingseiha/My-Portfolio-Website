@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, SetStateAction } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
@@ -9,7 +9,7 @@ import { FaGithub } from "react-icons/fa";
 import { projects } from "@/data/projects";
 
 // Tech stack icons mapping
-const techIcons = {
+const techIcons: Record<string, string> = {
   MongoDB: "/icons/mongodb.svg",
   "Express.js": "/icons/express.svg",
   React: "/icons/react.svg",
@@ -82,13 +82,14 @@ export default function ProjectsPage() {
 
     return () => {
       if (containerRef.current) {
+        // eslint-disable-next-line react-hooks/exhaustive-deps
         observer.unobserve(containerRef.current);
       }
     };
   }, []);
 
   // Handle category change
-  const handleCategoryChange = (category) => {
+  const handleCategoryChange = (category: SetStateAction<string>) => {
     setSelectedCategory(category);
   };
 
@@ -282,7 +283,7 @@ export default function ProjectsPage() {
                         >
                           {techIcons[tech] && (
                             <span className="w-4 h-4 mr-1 flex items-center justify-center">
-                              <img
+                              <Image
                                 src={techIcons[tech]}
                                 alt={tech}
                                 width={16}
@@ -377,7 +378,7 @@ export default function ProjectsPage() {
             Interested in working together?
           </h2>
           <p className="text-lg text-indigo-100 dark:text-indigo-200 mb-8 max-w-2xl mx-auto">
-            I'm always open to discussing new projects, creative ideas or
+            I&apos;m always open to discussing new projects, creative ideas or
             opportunities to be part of your vision.
           </p>
           <Link
