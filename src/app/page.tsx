@@ -127,7 +127,7 @@ export default function Home() {
 
               <div className="flex items-center gap-6 mt-12">
                 <a
-                  href="https://github.com/yourusername"
+                  href="https://github.com/naingseiha"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-slate-600 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-400 transition-colors"
@@ -145,7 +145,7 @@ export default function Home() {
                   </svg>
                 </a>
                 <a
-                  href="https://linkedin.com/in/yourusername"
+                  href="https://linkedin.com/in/naingseiha"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-slate-600 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-400 transition-colors"
@@ -159,7 +159,7 @@ export default function Home() {
                   </svg>
                 </a>
                 <a
-                  href="https://twitter.com/yourusername"
+                  href="https://x.com/seiha_naing"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-slate-600 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-400 transition-colors"

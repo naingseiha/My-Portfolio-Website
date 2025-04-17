@@ -284,7 +284,7 @@ export default function AboutPage() {
 
               <div className="mt-8 flex items-center gap-4">
                 <a
-                  href="https://github.com"
+                  href="https://github.com/naingseiha"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="GitHub Profile"
@@ -293,7 +293,7 @@ export default function AboutPage() {
                   <FaGithub size={22} />
                 </a>
                 <a
-                  href="https://linkedin.com"
+                  href="https://linkedin.com/naingseiha"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="LinkedIn Profile"
@@ -302,7 +302,7 @@ export default function AboutPage() {
                   <FaLinkedin size={22} />
                 </a>
                 <a
-                  href="https://twitter.com"
+                  href="https://x.com/seiha_naing"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Twitter Profile"

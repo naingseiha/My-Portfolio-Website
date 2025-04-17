@@ -16,7 +16,7 @@ export default function Footer() {
 
           <div className="flex space-x-6">
             <Link
-              href="https://github.com/yourusername"
+              href="https://github.com/naingseiha"
               target="_blank"
               rel="noopener noreferrer"
               className="text-slate-600 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-400"
@@ -32,7 +32,7 @@ export default function Footer() {
             </Link>
 
             <Link
-              href="https://linkedin.com/in/yourusername"
+              href="https://linkedin.com/in/naingseiha"
               target="_blank"
               rel="noopener noreferrer"
               className="text-slate-600 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-400"
@@ -44,7 +44,7 @@ export default function Footer() {
             </Link>
 
             <Link
-              href="https://twitter.com/yourusername"
+              href="https://twitter.com/seiha_naing"
               target="_blank"
               rel="noopener noreferrer"
               className="text-slate-600 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-400"
